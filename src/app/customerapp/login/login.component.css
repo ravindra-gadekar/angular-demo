@@ -1,0 +1,14 @@
+.login-btn {
+    position: relative;
+    left: 25%;
+}
+
+.pass__show__icon {
+    color: #242020 !important;
+    border-radius: 63% 37% 30% 70% / 50% 45% 55% 50% !important;
+    font-size: 17px !important;
+    text-align: center !important;
+    width: 25px !important;
+    height: 25px !important;
+    line-height: 25px !important;
+}

@@ -1,0 +1,22 @@
+<p>{{data.message}}</p>
+<form [formGroup]="loginForm" autocomplete="off" (ngSubmit)="handleLogin()">
+    <mat-form-field class="example-full-width">
+        <mat-label>User ID</mat-label>
+        <input matInput formControlName="userId" name="userId" placeholder="">
+        <!-- <p *ngIf="loginForm.controls['userId'].touched && loginForm.controls['userId'].value.length < 5">
+            User Id must be more then 4 charators
+        </p> -->
+        <mat-error>
+            userId is invalid !
+        </mat-error>
+    </mat-form-field>
+    <br><br>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input [type]="hide ? 'password' : 'text'" matInput formControlName="password" name="password" placeholder="">
+        <mat-icon class="pass__show__icon" matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
+    </mat-form-field>
+    <br><br>
+    <button type="submit" class="login-btn" mat-raised-button [disabled]="loginForm.invalid">--Login--</button>
+</form>
