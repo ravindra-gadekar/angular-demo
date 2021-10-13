@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       // width: '600px',
        disableClose: true,
        data:{
-        'message':"Hello User !"
+        'message':"close me !"
         }
      });
   }
