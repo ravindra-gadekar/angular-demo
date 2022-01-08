@@ -35,7 +35,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        local-dir: /home/runner/work/angular-demo/angular-demo
+        local-dir: /home/runner/work/angular-demo/angular-demo/
         server: angulardemo.cationsystem.com
         username: ftpaccess@angulardemo.cationsystem.com
         password: ${{ secrets.ftp_password }}
