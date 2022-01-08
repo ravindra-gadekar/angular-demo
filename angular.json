@@ -110,10 +110,15 @@
                 "deploy": {
                     "builder": "ngx-deploy-ftp:deploy",
                     "options": {
+                        "configuration": "production",
                         "host": "angulardemo.cationsystem.com",
+                        "remote-dir": "",
+                        "clean-remote": true,
+                        "dry-run": true,
                         "username": "ftpaccess@angulardemo.cationsystem.com",
                         "password": "FtpAccess@00#connect",
                         "tls": false
+
 
                     }
 
