@@ -32,4 +32,4 @@ jobs:
     # - run: npm run build --if-present
     # - run: npm run build --configuration=production
     # - run: npm test
-    - run: npm run deploy --clean-remote
+    - run: npm deploy --clean-remote
