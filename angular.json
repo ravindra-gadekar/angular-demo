@@ -106,6 +106,17 @@
                         ],
                         "scripts": []
                     }
+                },
+                "deploy": {
+                    "builder": "ngx-deploy-ftp:deploy",
+                    "options": {
+                        "host": "angulardemo.cationsystem.com",
+                        "username": "ftpaccess@angulardemo.cationsystem.com",
+                        "password": "FtpAccess@00#connect",
+                        "tls": false
+
+                    }
+
                 }
             }
         }
