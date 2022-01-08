@@ -37,11 +37,12 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/setup-node@v2
-      local-dir: /dist/first-project/
+      
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
+        local-dir: /dist/first-project/
         server: angulardemo.cationsystem.com
         username: ftpaccess@angulardemo.cationsystem.com
         password: ${{ secrets.ftp_password }}
